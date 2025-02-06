@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotationY="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/squirtle_png"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="80dp" />
+
     <Button
         android:id="@+id/fixedButton"
         android:layout_width="300dp"
@@ -52,7 +62,7 @@
         android:id="@+id/textView"
         android:layout_width="412dp"
         android:layout_height="143dp"
-        android:text="TextView"
+        android:text="This is example dialogue of the Character. This will be full of text that the Character replies with."
         app:layout_constraintBottom_toBottomOf="@id/backgroundImage"
         app:layout_constraintEnd_toEndOf="@id/backgroundImage"
         app:layout_constraintHorizontal_bias="0.902"
@@ -60,6 +70,21 @@
         app:layout_constraintTop_toTopOf="@id/backgroundImage"
         app:layout_constraintVertical_bias="0.495"
         tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="207dp"
+        android:layout_height="89dp"
+        android:gravity="center"
+        android:text="$5.00"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundImage"
+        app:layout_constraintEnd_toEndOf="@id/backgroundImage"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="@id/backgroundImage"
+        app:layout_constraintTop_toTopOf="@id/backgroundImage"
+        app:layout_constraintVertical_bias="0.155"
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
